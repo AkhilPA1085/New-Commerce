@@ -1,0 +1,32 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px solid gray;
+    background: #fff;
+
+    .nav-links-container{
+        display: inherit;
+        justify-content: space-between;
+    }
+    .nav-link{
+        text-transform: uppercase;
+        color: #000;
+        font-size: 18px;
+    }
+}
+@media(max-width:991px){
+    .navigation{
+        // flex-direction: column;
+
+        .nav-links-container{
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            
+        }
+    }
+}
